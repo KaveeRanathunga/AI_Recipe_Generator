@@ -1,50 +1,90 @@
-# Welcome to your Expo app 👋
+# Recipes Generator
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A full-stack recipe application with React Native frontend and Strapi backend.
 
-## Get started
+## Project Structure
 
-1. Install dependencies
+```
+├── frontend/          # React Native (Expo) mobile app
+├── backend/           # Strapi CMS backend
+├── .gitignore        # Git ignore rules
+└── README.md         # This file
+```
 
+## Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- Expo CLI
+- Expo Go app (for testing on mobile)
+
+## Getting Started
+
+### Frontend (React Native)
+
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. Start the development server:
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. Scan the QR code with Expo Go app to run on your mobile device
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Backend (Strapi)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1. Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
 
-## Get a fresh project
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-When you're ready, run:
+3. Start the development server:
+   ```bash
+   npm run develop
+   ```
 
-```bash
-npm run reset-project
+4. Access the admin panel at `http://localhost:1337/admin`
+
+## Features
+
+- Modern React Native UI with custom fonts
+- Strapi headless CMS backend
+- RESTful API integration
+- Mobile-first design
+
+## Environment Variables
+
+Make sure to set up your environment variables:
+
+### Frontend
+Create a `.env` file in the `frontend` directory:
+```
+EXPO_PUBLIC_STRAPI_API_KEY=your_strapi_api_key_here
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Backend
+The backend `.env` file is already configured in the `backend` directory.
 
-## Learn more
+## Contributing
 
-To learn more about developing your project with Expo, look at the following resources:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## License
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License.
